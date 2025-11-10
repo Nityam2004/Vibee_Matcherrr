@@ -23,7 +23,7 @@ The **Nexora Vibe Matcher** is an intelligent semantic recommendation system tha
 | **Deliverables** | ✅ Prepared | Final reflection and reports saved |
 
 ---
-
+---
 ## 🗂️ Project Structure
 Vibe-Matcher/
 ├── .gitignore # Ignores venv and secret files
@@ -40,3 +40,4 @@ Vibe-Matcher/
 │ ├── latency_data.csv # Raw performance data
 │ └── log_metrics.csv # Raw similarity scores and test results
 └── REFLECTION.md # Final submission: Detailed analysis and innovation
+---
