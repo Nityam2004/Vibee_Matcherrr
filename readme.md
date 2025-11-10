@@ -25,19 +25,22 @@ The **Nexora Vibe Matcher** is an intelligent semantic recommendation system tha
 ---
 ---
 ## 🗂️ Project Structure
-Vibe-Matcher/
-├── .gitignore # Ignores venv and secret files
-├── README.md # This file
-├── requirements.txt # Project dependencies
-├── run_matcher.py # Main execution, testing, and logging script
+
+
+```bash
+Vibe-Matcher-Nexora/
+├── .gitignore               # Ignores venv and secret files
+├── README.md                # This file
+├── requirements.txt         # Project dependencies
+├── run_matcher.py           # Main execution, testing, and logging script
 ├── src/
-│ ├── init.py
-│ └── vibe_match.py # Core logic: Embedding functions & Vibe Matcher
+│   ├── __init__.py
+│   └── vibe_match.py        # Core logic: Embedding functions & Vibe Matcher
 ├── data/
-│ └── products.json # Mock product catalog (7 items)
+│   └── products.json        # Mock product catalog (7 items)
 ├── notebooks/
-│ ├── latency_plot.png # Saved visualization of performance
-│ ├── latency_data.csv # Raw performance data
-│ └── log_metrics.csv # Raw similarity scores and test results
-└── REFLECTION.md # Final submission: Detailed analysis and innovation
----
+│   ├── latency_plot.png     # Saved visualization of performance
+│   ├── latency_data.csv     # Raw performance data
+│   └── log_metrics.csv      # Raw similarity scores and test results
+└── REFLECTION.md            # Final submission: Detailed analysis and innovation
+
