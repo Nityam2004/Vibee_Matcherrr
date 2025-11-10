@@ -43,7 +43,7 @@ Vibe-Matcher-Nexora/
 │   ├── latency_data.csv     # Raw performance data
 │   └── log_metrics.csv      # Raw similarity scores and test results
 └── REFLECTION.md            # Final submission: Detailed analysis and innovation
-
+```
 ---
 
 ---
@@ -52,9 +52,10 @@ Vibe-Matcher-Nexora/
 
 ### **Prerequisites**
 
+```bash
 - Python 3.8+
 - A valid **Google Gemini API Key**
-
+```
 ---
 
 ### **1️⃣ Clone the Repository**
@@ -62,27 +63,31 @@ Vibe-Matcher-Nexora/
 ```bash
 git clone https://github.com/YourUsername/Nexora-Vibe-Matcher.git
 cd Nexora-Vibe-Matcher
+```
 ---
 2️⃣ Setup Virtual Environment (Recommended)
 
 macOS/Linux (or Git Bash):
 
+```bash
 python -m venv venv
 source venv/bin/activate
-
+    ```
 
 Windows PowerShell:
-
+```bash
 python -m venv venv
 .\venv\Scripts\activate
-
+```
 3️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
+```
 
 4️⃣ Set Your API Key
 
 ⚠️ The Python Gemini client automatically reads your key from the GOOGLE_API_KEY environment variable.
-
+```bash
 PowerShell:
 
 $env:GOOGLE_API_KEY="AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
@@ -91,7 +96,7 @@ $env:GOOGLE_API_KEY="AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 Git Bash / macOS:
 
 export GOOGLE_API_KEY="AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
-
+```
 5️⃣ Run the Vibe Matcher
 
 Execute the main script to:
@@ -170,6 +175,7 @@ Performance graphs are visualized in notebooks/latency_plot.png.
 
 🔹 Expand dataset and integrate real product metadata
 
+```bash
 🪄 Example Code Snippet
 from src.vibe_match import VibeMatcher
 
@@ -179,7 +185,7 @@ query = "eco-friendly bamboo sunglasses"
 top_products = matcher.match(query, top_k=3)
 for i, (product, score) in enumerate(top_products):
     print(f"{i+1}. {product['name']} — Score: {score:.2f}")
-
+``
 📚 References
 
 Google AI Studio: Gemini Embeddings API
@@ -192,7 +198,7 @@ Python timeit Module
 
 🧾 Author
 
-Developed by: Nityam Rajput
+Developed by: Nityam
 
 Project: Nexora Semantic Vibe Matcher
 License: MIT License © 2025
