@@ -18,7 +18,7 @@ To prototype a "Vibe Matcher" recommendation system that uses **OpenAI Embedding
 1.  Clone the repository:
     ```bash
     git clone [git@github.com:Nityam2004/Vibee_Matcherrr.git](https://github.com/Nityam2004/Vibee_Matcherrr.git)
-    cd Vibe-Matcher-Nexora
+    cd Vibe-Matcher
     ```
 2.  Create and activate a virtual environment:
     ```bash
