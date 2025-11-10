@@ -1,41 +1,28 @@
-# 🌟 Vibe Matcher Prototype: Next-Generation Recommendation System for Nexora
+# 🌟 Nexora Vibe Matcher Prototype
 
-## 🎯 Project Goal
-To prototype a "Vibe Matcher" recommendation system that uses **OpenAI Embeddings** and **Cosine Similarity (sklearn)** to semantically match a user's free-text "vibe query" (e.g., "energetic urban chic") to the top products in a mock catalog.
+### **A Semantic Product Recommendation System using Gemini Embeddings and Vector Search**
 
-## 📄 Deliverables
-1.  **Code & Repository:** This GitHub repository contains all the code.
-2.  **Notebook/Report:** The `notebooks/VibeMatcher_Report.ipynb` file (or a link to the Colab version) contains the run logs, latency plot, and detailed step-by-step execution.
-3.  **Reflection:** The `REFLECTION.md` file contains the required reflection and suggested improvements (including Pinecone integration).
+---
 
-## 🚀 Quickstart Guide
+## 🧭 Overview
 
-### Prerequisites
-* Python 3.8+
-* An OpenAI API Key (Set as an environment variable)
+The **Nexora Vibe Matcher** is an intelligent semantic recommendation system that enhances product discovery by going beyond simple keyword matching. Instead, it captures the **semantic "vibe"** of user queries using **Google Gemini embeddings** and performs **vector-based similarity search** to recommend products that best align with user intent.
 
-### Installation
-1.  Clone the repository:
-    ```bash
-    git clone [git@github.com:Nityam2004/Vibee_Matcherrr.git](https://github.com/Nityam2004/Vibee_Matcherrr.git)
-    cd Vibe-Matcher
-    ```
-2.  Create and activate a virtual environment:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Linux/macOS
-    # .\venv\Scripts\activate # On Windows
-    ```
-3.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-4.  Set your OpenAI API key (replace `YOUR_API_KEY`):
-    ```bash
-    export OPENAI_API_KEY="YOUR_API_KEY"
-    ```
+---
 
-### Run the Vibe Matcher
-Execute the main script to run the defined test queries and see the output:
-```bash
-python run_matcher.py
+## 🚀 Key Features & Requirements
+
+| Requirement | Status | Technology Used |
+|--------------|---------|----------------|
+| **Data Preparation** | ✅ Complete | Pandas DataFrame |
+| **Embedding Generation** | ✅ Complete | Google `gemini-embedding-001` |
+| **Vector Search** | ✅ Complete | `sklearn.metrics.pairwise.cosine_similarity` |
+| **Top-K Output** | ✅ Complete | Outputs Top 3 ranked products with scores |
+| **Edge Case Handling** | ✅ Implemented | Fallback prompt for `Score < 0.7` |
+| **Testing / Evaluation** | ✅ Complete | Latency logging (`timeit`) and metrics saved |
+| **Deliverables** | ✅ Prepared | Final reflection and reports saved |
+
+---
+
+## 🗂️ Project Structure
+
