@@ -122,7 +122,7 @@ File	Description
 latency_plot.png	Visualization of response time per query
 log_metrics.csv	Raw similarity scores and threshold check (Score > 0.7)
 latency_data.csv	Raw performance data with latency measurements
-    ```
+```
 ##🧠 **How It Works**
 ```bash
 Embedding Generation
