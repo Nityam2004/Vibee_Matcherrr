@@ -180,6 +180,7 @@ Performance graphs are visualized in notebooks/latency_plot.png.
 
 ```
 🪄** Example Code Snippet**
+```bash
 from src.vibe_match import VibeMatcher
 
 matcher = VibeMatcher(data_path="data/products.json")
@@ -188,7 +189,7 @@ query = "eco-friendly bamboo sunglasses"
 top_products = matcher.match(query, top_k=3)
 for i, (product, score) in enumerate(top_products):
     print(f"{i+1}. {product['name']} — Score: {score:.2f}")
-``
+```
 ##📚** References**
 ```bash
 Google AI Studio: Gemini Embeddings API
