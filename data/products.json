@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Boho Floral Dress", 
+        "desc": "Flowy, earthy tones for festival vibes. Made of soft, sustainable cotton.", 
+        "vibes": ["boho", "cozy", "festival"]
+    },
+    {
+        "name": "Leather Moto Jacket", 
+        "desc": "Structured black leather with silver hardware. Perfect for a tough, edgy aesthetic.", 
+        "vibes": ["edgy", "chic", "urban"]
+    },
+    {
+        "name": "Oversized Cashmere Sweater", 
+        "desc": "Warm and luxurious hand-knitted cashmere. Ideal for a cold, quiet night in.", 
+        "vibes": ["cozy", "luxurious", "minimalist"]
+    },
+    {
+        "name": "Neon Mesh Sneakers", 
+        "desc": "Bright, high-vis sneakers with breathable mesh. Designed for active, energetic urban runs.", 
+        "vibes": ["energetic", "urban", "sporty"]
+    },
+    {
+        "name": "Pinstripe Business Suit", 
+        "desc": "Classic tailored wool suit. Professional, sharp, and commanding presence.", 
+        "vibes": ["professional", "sharp", "classic"]
+    },
+    {
+        "name": "Minimalist Silver Ring", 
+        "desc": "A simple, thin silver band. Clean lines for a sleek and understated look.", 
+        "vibes": ["minimalist", "sleek", "quiet"]
+    },
+    {
+        "name": "Vintage Denim Jumpsuit", 
+        "desc": "Worn-in 70s style denim, comfortable and playful. Great for retro fun.", 
+        "vibes": ["retro", "playful", "cozy"]
+    }
+]

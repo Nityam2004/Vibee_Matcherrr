@@ -1,0 +1,9 @@
+# Core libraries for data handling and vector search
+pandas
+numpy
+scikit-learn
+matplotlib
+
+# Google Gemini API Client
+google-genai
+tabulate
