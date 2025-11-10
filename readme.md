@@ -79,12 +79,12 @@ Windows PowerShell:
 python -m venv venv
 .\venv\Scripts\activate
 ```
-3️⃣ Install Dependencies
+##3️⃣ Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
 
-4️⃣ Set Your API Key
+$$4️⃣ Set Your API Key
 
 ⚠️ The Python Gemini client automatically reads your key from the GOOGLE_API_KEY environment variable.
 ```bash
@@ -97,8 +97,8 @@ Git Bash / macOS:
 
 export GOOGLE_API_KEY="AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ```
-5️⃣ Run the Vibe Matcher
-
+##5️⃣ Run the Vibe Matcher
+```bash
 Execute the main script to:
 
 Generate embeddings
@@ -110,9 +110,10 @@ Execute test queries
 Log metrics and latency
 
 python run_matcher.py
+```
 
-📊 Evaluation Output
-
+##📊 Evaluation Output
+```bash
 Upon successful execution, the system prints a summary log table showing similarity metrics and top recommendations.
 
 All output files are stored in the notebooks/ directory:
@@ -121,7 +122,9 @@ File	Description
 latency_plot.png	Visualization of response time per query
 log_metrics.csv	Raw similarity scores and threshold check (Score > 0.7)
 latency_data.csv	Raw performance data with latency measurements
-🧠 How It Works
+    ```
+##🧠 How It Works
+```bash
 Embedding Generation
 
 Product descriptions and user queries are converted into numerical vectors using Gemini Embeddings.
@@ -152,8 +155,8 @@ Rank	Product Name	Similarity Score
 3️⃣	Thermal Sweatshirt	0.85
 
 ✅ All above 0.7 threshold — no fallback triggered.
-
-📈 Performance Metrics
+```
+##📈 Performance Metrics
 
 Average Embedding Generation Time: 0.25 s/query
 
@@ -165,7 +168,7 @@ Similarity Threshold: 0.7
 
 Performance graphs are visualized in notebooks/latency_plot.png.
 
-🧩 Future Enhancements
+##🧩 Future Enhancements
 
 🔹 Integration with Pinecone or FAISS for large-scale vector databases
 
@@ -186,7 +189,7 @@ top_products = matcher.match(query, top_k=3)
 for i, (product, score) in enumerate(top_products):
     print(f"{i+1}. {product['name']} — Score: {score:.2f}")
 ``
-📚 References
+##📚 References
 
 Google AI Studio: Gemini Embeddings API
 
@@ -196,7 +199,7 @@ Pandas Official Docs
 
 Python timeit Module
 
-🧾 Author
+##🧾 Author
 
 Developed by: Nityam
 
