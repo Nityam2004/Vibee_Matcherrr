@@ -79,12 +79,12 @@ Windows PowerShell:
 python -m venv venv
 .\venv\Scripts\activate
 ```
-##3️⃣ Install Dependencies
+##3️⃣ **Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-$$4️⃣ Set Your API Key
+##4️⃣ **Set Your API Key**
 
 ⚠️ The Python Gemini client automatically reads your key from the GOOGLE_API_KEY environment variable.
 ```bash
@@ -97,7 +97,7 @@ Git Bash / macOS:
 
 export GOOGLE_API_KEY="AIzaSyXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 ```
-##5️⃣ Run the Vibe Matcher
+##5️⃣ **Run the Vibe Matcher**
 ```bash
 Execute the main script to:
 
@@ -112,7 +112,7 @@ Log metrics and latency
 python run_matcher.py
 ```
 
-##📊 Evaluation Output
+##📊 **Evaluation Output**
 ```bash
 Upon successful execution, the system prints a summary log table showing similarity metrics and top recommendations.
 
@@ -123,7 +123,7 @@ latency_plot.png	Visualization of response time per query
 log_metrics.csv	Raw similarity scores and threshold check (Score > 0.7)
 latency_data.csv	Raw performance data with latency measurements
     ```
-##🧠 How It Works
+##🧠 **How It Works**
 ```bash
 Embedding Generation
 
@@ -156,7 +156,7 @@ Rank	Product Name	Similarity Score
 
 ✅ All above 0.7 threshold — no fallback triggered.
 ```
-##📈 Performance Metrics
+##📈** Performance Metrics**
 
 Average Embedding Generation Time: 0.25 s/query
 
@@ -168,8 +168,8 @@ Similarity Threshold: 0.7
 
 Performance graphs are visualized in notebooks/latency_plot.png.
 
-##🧩 Future Enhancements
-
+##🧩 **Future Enhancements**
+```bash
 🔹 Integration with Pinecone or FAISS for large-scale vector databases
 
 🔹 Add UI layer using Streamlit for real-time user interaction
@@ -178,8 +178,8 @@ Performance graphs are visualized in notebooks/latency_plot.png.
 
 🔹 Expand dataset and integrate real product metadata
 
-```bash
-🪄 Example Code Snippet
+```
+🪄** Example Code Snippet**
 from src.vibe_match import VibeMatcher
 
 matcher = VibeMatcher(data_path="data/products.json")
@@ -189,8 +189,8 @@ top_products = matcher.match(query, top_k=3)
 for i, (product, score) in enumerate(top_products):
     print(f"{i+1}. {product['name']} — Score: {score:.2f}")
 ``
-##📚 References
-
+##📚** References**
+```bash
 Google AI Studio: Gemini Embeddings API
 
 scikit-learn cosine_similarity Documentation
@@ -198,13 +198,14 @@ scikit-learn cosine_similarity Documentation
 Pandas Official Docs
 
 Python timeit Module
-
-##🧾 Author
-
+```
+##🧾 **Author**
+```bash
 Developed by: Nityam
 
 Project: Nexora Semantic Vibe Matcher
 License: MIT License © 2025
 
 “Find not just what matches your words — but what matches your vibe.”
+```
 
